@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Applet</string>
+    <string name="title">AppleWood height Secondary School</string>
+    <string name="provider">Peel education</string>
+    <string name="menu">Home</string>
+    <drawable name="Symbol">schoolIcon</drawable>
+    <drawable name="pSymbol">profileIcon</drawable>
+    <string name="menu2">Profile</string>
+    <string name="menu3">News</string>
+    <string name="page1">School hours and Calendar</string>
+    <string name="tile">Undecided</string>
+
+</resources>

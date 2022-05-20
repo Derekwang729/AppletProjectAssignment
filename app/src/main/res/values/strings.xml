@@ -9,5 +9,15 @@
     <string name="menu3">News</string>
     <string name="page1">School hours and Calendar</string>
     <string name="tile">Undecided</string>
+    <string name="hours">School Hours</string>
+    <string name="dhours">
+        <br>Regular day schedule</br>
+        <br>Period	Time</br>
+        <br>Period 1	8:10 am –– 9:25 am</br>
+        <br>Period 2	9:28 am –– 10:43 am</br>
+        <br>Lunch	10:46 am –– 11:46 am</br>
+        <br>Period 3	11:50 am –– 1:05 pm</br>
+        <br>Period 4	1:09 pm –– 2:24 pm</br>
+    </string>
 
 </resources>

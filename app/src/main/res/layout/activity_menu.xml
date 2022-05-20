@@ -13,6 +13,7 @@
         android:background="@color/DeepBlue"
         android:text="@string/tile"
         android:textSize="60sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -67,12 +68,13 @@
         android:layout_height="wrap_content"
         android:text="@string/page1"
         android:textSize="30sp"
+        android:onClick="hourCalendar"
         app:backgroundTint="@color/Red"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintVertical_bias="0.14" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity { //main program
         setContentView(R.layout.activity_news);
     }
 
+    public void hourCalendar(View view){
+        setContentView(R.layout.activity_hourcalendar);
+    }
+
     protected void onPause(){  //function when other activity is taking focus
         super.onPause();
     }

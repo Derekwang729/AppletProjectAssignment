@@ -1,12 +1,14 @@
 package com.example.applet;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.os.Bundle; //import os bundle
-import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
-import android.widget.ImageView;
+import android.view.View;
+import android.widget.CalendarView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class MainActivity extends AppCompatActivity { //main program
 
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity { //main program
 
     public void hourCalendar(View view){
         setContentView(R.layout.activity_hourcalendar);
+
     }
 
     protected void onPause(){  //function when other activity is taking focus
@@ -50,5 +53,23 @@ public class MainActivity extends AppCompatActivity { //main program
 
     protected void onDestroy(){  //function before kill the activity
         super.onDestroy();
+    }
+}
+
+class calendar extends AppCompatActivity{
+
+    private  static final String TAG = "Calendar";
+
+    protected void calendarA(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_hourcalendar);
+        CalendarView mCalendarView = (CalendarView) findViewById(R.id.calendarView);
+        mCalendarView.setOnDateChangeListener((CalendarView, year, month, dayOfMonth) -> {
+            String date = 2022 + "/" + 5 + "/"+ 31 ;
+            Log.d(TAG, "onSelectedDayChange: yyyy/mm/dd:" + date);
+            Intent intent = new Intent(calendar.this,MainActivity.class);
+            intent.putExtra("date",date);
+            startActivity(intent);
+        });
     }
 }
